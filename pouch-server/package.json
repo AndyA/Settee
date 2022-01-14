@@ -1,0 +1,53 @@
+{
+  "name": "settee",
+  "version": "0.0.1",
+  "description": "A CouchDB replacement",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "tdd": "jest --watch",
+    "dev": "nodemon bin/server.js",
+    "prettier": "prettier -w **/*.js"
+  },
+  "keywords": [
+    "CouchDB",
+    "database",
+    "PouchDB"
+  ],
+  "author": "Andy Armstrong <andy@hexten.net>",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^3.3.7",
+    "express": "^4.17.2",
+    "express-pouchdb": "^4.2.0",
+    "lodash": "^4.17.21",
+    "pouchdb": "^7.2.2",
+    "pouchdb-server": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": false,
+    "quoteProps": "consistent",
+    "jsxSingleQuote": false,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "arrowParens": "avoid",
+    "requirePragma": false,
+    "insertPragma": false,
+    "proseWrap": "preserve",
+    "htmlWhitespaceSensitivity": "css",
+    "endOfLine": "lf"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "lib/**",
+      "bin/server.js",
+      "config/**"
+    ]
+  }
+}
