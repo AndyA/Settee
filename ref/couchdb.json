@@ -1,0 +1,14 @@
+{
+  "couchdb": "Welcome",
+  "version": "3.2.1",
+  "git_sha": "244d428af",
+  "uuid": "77e6735bf6218dee87d8797583627845",
+  "features": [
+    "access-ready",
+    "partitioned",
+    "pluggable-storage-engines",
+    "reshard",
+    "scheduler"
+  ],
+  "vendor": { "name": "The Apache Software Foundation" }
+}
